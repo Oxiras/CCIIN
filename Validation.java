@@ -2,7 +2,7 @@
  *PROGRAM: Validation.java
  *@author Moustapha Dieng
  *@version 1.1.1
- *This class uses luhn's logarithm to check
+ *This class uses Luhn algorithm to check
  *for valid credit card numbers.
  */
 
@@ -36,7 +36,7 @@ public class Validation {
 		{
 			//Reverses the credit card number for processing.
 			String reverse = new StringBuffer(line).reverse().toString();
-			//Runs the logarithm.
+			//Runs the algorithm.
 			for(int i = 0 ; i < reverse.length(); i++)
 			{
 				int digit = Character.digit(reverse.charAt(i), 10);
